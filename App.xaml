@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BookDecryptor.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#0A84FF</Color>
+            <Color x:Key="Surface">#FFFFFF</Color>
+            <Color x:Key="SurfaceDark">#1C1C1E</Color>
+            <Color x:Key="Canvas">#F2F2F7</Color>
+            <Color x:Key="CanvasDark">#000000</Color>
+            <Color x:Key="TextPrimary">#000000</Color>
+            <Color x:Key="TextPrimaryDark">#FFFFFF</Color>
+            <Color x:Key="TextSecondary">#8E8E93</Color>
+            <Color x:Key="TextSecondaryDark">#98989D</Color>
+
+            <Style TargetType="Label">
+                <Setter Property="TextColor"
+                        Value="{AppThemeBinding Light={StaticResource TextPrimary}, Dark={StaticResource TextPrimaryDark}}" />
+            </Style>
+            <Style x:Key="Caption" TargetType="Label">
+                <Setter Property="FontSize" Value="12" />
+                <Setter Property="TextColor"
+                        Value="{AppThemeBinding Light={StaticResource TextSecondary}, Dark={StaticResource TextSecondaryDark}}" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
